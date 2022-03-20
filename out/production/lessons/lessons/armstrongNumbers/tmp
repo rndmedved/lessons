@@ -1,0 +1,29 @@
+/*
+    private static int[] getNumeric(long n){
+        int ch=0;
+        long newNumeric = n;
+        while(newNumeric >= 1){
+            newNumeric/=10;
+            ch++;
+        }
+        int[] result = new int[ch];
+        for (int i = 0; i < ch; i++) {
+            result[i] = (int) ((n / pow(10, i)) % 10);
+        }
+        return result;
+    }
+
+    private static long pow(int n, int power){
+        if (power == 0) return 1;
+        return n*pow(n, power-1);
+    }
+
+    private static long powSum(long number){
+        int[] array = getNumeric(number);
+        long sum = 0;
+        for (int i = 0; i < array.length; i++) {
+            sum += pow(array[i], array.length);
+        }
+        return sum;
+    }
+    */
