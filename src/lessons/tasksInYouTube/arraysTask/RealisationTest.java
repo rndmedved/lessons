@@ -55,6 +55,7 @@ class Realisation1 extends Realisation{
     }
 
     //    Реализация простым перебором. Долго и нудно.
+    @Override
     public int[] findSum(){
         for (int i = 0; i < array.length; i++) {
             for(int j = i + 1; j < array.length; j++){
@@ -74,7 +75,7 @@ class RealisationWithHashSet extends Realisation{
         this.array = array;
         this.k = k;
     }
-
+    @Override
     public int[] findSum(){
         Set<Integer> set = new HashSet<>();
         for(Integer a: array){
@@ -100,7 +101,7 @@ class RealisationSortedArray extends Realisation{
         this.array = array;
         this.k = k;
     }
-
+    @Override
     public int[] findSum(){
         for (int i = 0; i < array.length; i++) {
             int numberToFind = k - array[i];
@@ -135,7 +136,7 @@ class RealisationWithTwoPointers extends Realisation{
         this.array = array;
         this.k = k;
     }
-
+    @Override
     public int[] findSum(){
         int l = 0; int r = array.length -1;
         while (l < r){
