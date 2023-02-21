@@ -6,9 +6,10 @@ import java.util.*;
 
 public class RealisationTest {
     public static void main(String[] args) {
-        int arrayLength = 100000;
+        int arrayLength = 100;
         int[] array = sortedList(arrayLength);
         int k = array.length/3;
+        System.out.println(Arrays.toString(array));
 //        System.out.println(Arrays.toString(array));
         System.out.println(k);
 
